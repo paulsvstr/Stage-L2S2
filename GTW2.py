@@ -10,13 +10,13 @@ from rdflib import Graph, Namespace
 from rdflib.plugins.sparql import prepareQuery
 
 # Charger la base de données YAGO Tiny depuis un fichier Turtle
-print("tout est bien importé")
+print("tout est bien importén et modif #1")
 
 yago_graph = Graph()
 
 print("Graph() executed")
 
-yago_graph.parse("yago-tiny.ttl", format="ttl")
+yago_graph.parse("/home/psevestre/YagotinyKB/yago-tiny.ttl", format="ttl")
 
 print("Yago graph parse bien executed")
 
