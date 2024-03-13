@@ -1,15 +1,15 @@
 from rdflib import Graph, Namespace
 from rdflib.plugins.stores import sparqlstore
 from rdflib.plugins.stores.sparqlstore import SPARQLStore
-
+print("ok")
 # Initialiser un objet Graph avec BerkeleyDB comme backend de stockage
 store = SPARQLStore('berkeley', config = {'dataset_path': 'yago.db'})
 rdf_graph = Graph(store)
-
+print("ok")
 # Définir les préfixes pour les namespaces utilisés dans YAGO
 YAGO = Namespace("http://yago-knowledge.org/resource/")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
-
+print("ok")
 # Fonction pour charger le fichier RDF dans BerkeleyDB
 def charger_rdf_dans_berkeleydb(filename):
     with open(filename, 'r') as file:
@@ -17,7 +17,7 @@ def charger_rdf_dans_berkeleydb(filename):
             # Ignorer les lignes de commentaire et les lignes vides
             if not line.startswith("#") and line.strip():
                 rdf_graph.parse(data=line, format="ttl")
-
+print("ok")
 # Charger le fichier RDF directement dans BerkeleyDB
 charger_rdf_dans_berkeleydb("yago-tiny.ttl")
 
