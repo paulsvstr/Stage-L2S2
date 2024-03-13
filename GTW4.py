@@ -20,9 +20,10 @@ def charger_rdf_dans_berkeleydb(filename):
 print("ok")
 # Charger le fichier RDF directement dans BerkeleyDB
 charger_rdf_dans_berkeleydb("/home/psevestre/YagotinyKB/yago-tiny.ttl")
-
+print("okok")
 # Fonction pour trouver le type d'un mot donné
 def trouver_type_mot(mot):
+    print("ok focntion")
     # Requête SPARQL pour trouver le type du mot donné
     query = f"""
         SELECT DISTINCT ?type
@@ -37,7 +38,7 @@ def trouver_type_mot(mot):
     # Récupérer et retourner le type du mot
     types = [row.type for row in results]
     return types
-
+print("ok top")
 # Mot à rechercher
 mot_a_rechercher = "Elvis_Presley"  # Vous pouvez changer le mot ici
 
