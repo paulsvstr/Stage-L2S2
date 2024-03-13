@@ -19,7 +19,7 @@ def charger_rdf_dans_berkeleydb(filename):
                 rdf_graph.parse(data=line, format="ttl")
 print("ok")
 # Charger le fichier RDF directement dans BerkeleyDB
-charger_rdf_dans_berkeleydb("yago-tiny.ttl")
+charger_rdf_dans_berkeleydb("/home/psevestre/YagotinyKB/yago-tiny.ttl")
 
 # Fonction pour trouver le type d'un mot donné
 def trouver_type_mot(mot):
