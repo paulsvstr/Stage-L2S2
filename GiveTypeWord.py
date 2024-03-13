@@ -6,13 +6,13 @@ Created on Wed Mar  6 14:09:26 2024
 @author: paulsevestre
 """
 from rdflib import Graph
-print('programme bien lancé')
+print('programme bien lancé et modif')
 # Charger la base de données YAGO Tiny
 yago_graph = Graph(store="BerkeleyDB")
 print("commande graph... ok")
 yago_graph.open("yago.db") #yago_graph.open("yago.db",create=True)
 print('accès à yagodb OK')
-yago_graph.parse("yago-tiny.ttl", format="ttl")
+yago_graph.parse("/YagotinyKB/yago-tiny.ttl", format="ttl")
 print('yago_graph.parse OK')
 
 def trouver_type_mot(mot):
