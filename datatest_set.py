@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Mar  6 17:35:06 2024
+
+@author: paulsevestre
+"""
+
+donnees = [
+    ["ville", "Paris", "Lyon", "Marseille", "Londres", "Berlin", "Rome"],
+    ["fruit", "pomme", "banane", "orange", "fraise", "raisin", "ananas"],
+    ["animal", "chien", "chat", "oiseau", "poisson", "souris", "éléphant"],
+    ["couleur", "rouge", "bleu", "vert", "jaune", "orange", "violet"],
+    ["nourriture", "pain", "viande", "fromage", "pâtes", "salade", "yaourt"],
+    ["instrument", "piano", "guitare", "violon", "flûte", "trompette", "batterie"],
+    ["pays", "France", "Allemagne", "Italie", "Espagne", "Royaume-Uni", "États-Unis"],
+    ["vêtement", "chemise", "pantalon", "robe", "jupe", "veste", "chaussure"],
+    ["véhicule", "voiture", "moto", "vélo", "camion", "avion", "bateau"],
+    ["profession", "médecin", "enseignant", "policier", "plombier", "artiste", "ingénieur"],
+    ["fleur", "rose", "tulipe", "muguet", "jonquille", "orchidée", "violette"],
+    ["instrument de cuisine", "casserole", "poêle", "cuillère", "fourchette", "couteau", "spatule"],
+    ["sport", "football", "basketball", "tennis", "natation", "volleyball", "course"],
+    ["élément chimique", "hydrogène", "oxygène", "carbone", "azote", "fer", "cuivre"],
+    ["outil", "marteau", "tournevis", "scie", "clé", "pince", "perceuse"],
+    ["forme géométrique", "cercle", "triangle", "carré", "rectangle", "ovale", "hexagone"],
+    ["jour de la semaine", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+    ["mois de l'année", "janvier", "février", "mars", "avril", "mai", "juin"],
+    ["matière scolaire", "mathématiques", "français", "histoire", "géographie", "sciences", "anglais"],
+    ["activité de loisir", "lecture", "peinture", "jardinage", "cuisson", "musique", "sport"],
+    ["élément de la nature", "arbre", "fleur", "rocher", "rivière", "montagne", "lac"],
+    ["instrument de musique", "guitare", "piano", "violon", "flûte", "trompette", "batterie"],
+    ["boisson", "eau", "café", "thé", "jus", "soda", "vin"],
+    ["concept mathématique", "nombre", "addition", "soustraction", "multiplication", "division", "équation"],
+    ["objet de décoration", "tableau", "sculpture", "vase", "statue", "photographie", "tapisserie"],
+    ["activité professionnelle", "travail", "réunion", "présentation", "entretien", "formation", "conférence"],
+    ["forme physique", "carré", "rond", "rectangle", "triangle", "cercle", "ovale"],
+    ["pièce de la maison", "chambre", "salon", "cuisine", "salle de bain", "bureau", "salle à manger"],
+    ["fruit", "pomme", "banane", "orange", "fraise", "raisin", "ananas"],
+    ["animal domestique", "chien", "chat", "poisson rouge", "hamster", "lapin", "oiseau"],
+    ["outil de cuisine", "couteau", "fourchette", "cuillère", "poêle", "casserole", "spatule"],
+    ["pays européen", "France", "Allemagne", "Italie", "Espagne", "Royaume-Uni", "Portugal"],
+    ["forme géométrique", "carré", "cercle", "triangle", "rectangle", "hexagone", "ovale"],
+    ["jour de la semaine", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+    ["mois de l'année", "janvier", "février", "mars", "avril", "mai", "juin"],
+    ["instrument de musique", "piano", "guitare", "violon", "flûte", "trompette", "saxophone"],
+    ["activité de loisir", "lecture", "peinture", "jardinage", "cuisson", "musique", "sport"],
+    ["boisson", "eau", "café", "thé", "jus", "soda", "bière"],
+    ["concept mathématique", "nombre", "addition", "soustraction", "multiplication", "division", "équation"],
+    ["objet de décoration", "tableau", "sculpture", "vase", "statue", "photographie", "tapisserie"],
+    ["activité professionnelle", "travail", "réunion", "présentation", "entretien", "formation", "conférence"],
+    ["forme physique", "carré", "rond", "rectangle", "triangle", "cercle", "ovale"],
+    ["pièce de la maison", "chambre", "salon", "cuisine", "salle de bain", "bureau", "salle à manger"],
+    ["fruit", "pomme", "banane", "orange", "fraise", "raisin", "ananas"],
+    ["animal domestique", "chien", "chat", "poisson rouge", "hamster", "lapin", "oiseau"],
+    ["outil de cuisine", "couteau", "fourchette", "cuillère", "poêle", "casserole", "spatule"],
+    ["pays européen", "France", "Allemagne", "Italie","Espagne","Luxembourg","Hongrie"]]
