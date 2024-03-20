@@ -23,7 +23,6 @@ def trouver_type_mot(mot):
         SELECT DISTINCT ?type
         WHERE {{
             yago:{mot} rdf:type ?type.
-            OPTIONAL {{ yago:{mot} <http://yago-knowledge.org/resource/birthDate> ?date. }}
         }}
     """
 
