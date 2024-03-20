@@ -11,6 +11,6 @@ from rdflib import Graph
 yago_graph = Graph()
 
 
-yago_graph.parse("/home/psevestre/YagotinyKB/yago-tiny1000.ttl", format="ttl")
+yago_graph.parse("/home/psevestre/YagotinyKB/yago-tiny50000.ttl", format="ttl")
 
 print("Yago graph parse bien executed")
