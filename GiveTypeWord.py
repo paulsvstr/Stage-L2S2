@@ -12,7 +12,7 @@ yago_graph = Graph(store="BerkeleyDB")
 print("commande graph... ok")
 yago_graph.open("yago.db") #yago_graph.open("yago.db",create=True)
 print('accès à yagodb OK')
-yago_graph.parse("/home/psevestre/YagotinyKB/yago-tiny.ttl", format="ttl")
+#yago_graph.parse("/home/psevestre/YagotinyKB/yago-tiny.ttl", format="ttl")
 print('yago_graph.parse OK')
 
 def trouver_type_mot(mot):
