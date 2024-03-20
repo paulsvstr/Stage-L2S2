@@ -20,4 +20,4 @@ print("Yago graph parse bien executed")
 
 elapsed = end - start
 
-print(f'Temps d\'exécution : {elapsed:.2}ms')
+print(f'Temps d\'exécution : {elapsed:.2}s')
