@@ -24,7 +24,7 @@ def trouver_type_mot(mot):
     return types
 
 # Mot à rechercher
-mot_a_rechercher = "Strategy_video_game"  # Vous pouvez changer le mot ici
+mot_a_rechercher = input() #"Strategy_video_game"  # Vous pouvez changer le mot ici
 
 # Trouver et afficher le type du mot
 types = trouver_type_mot(mot_a_rechercher)
