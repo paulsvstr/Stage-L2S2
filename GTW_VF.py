@@ -18,7 +18,7 @@ def trouver_type_mot(mot):
 
     # Exécuter la requête SPARQL
     results = yago_graph.query(query)
-
+    print(results)
     # Récupérer et retourner le type du mot
     types = [row["type"] for row in results]
     return types
