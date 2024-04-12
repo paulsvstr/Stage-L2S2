@@ -13,15 +13,15 @@ test_graph.commit()
 
 def trouver_type_mot(mot):
     # Requête SPARQL pour trouver le type du mot donné
-    query = """
+    query = f"""
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX yago: <http://yago-knowledge.org/resource/>
         
         SELECT DISTINCT ?type
-        WHERE {
-            ?subject ?predicate ?type .
-        }
+        WHERE {{
+            yago:{mot} rdf:type ?type.
+        }}
     """
 
     # Exécuter la requête SPARQL
