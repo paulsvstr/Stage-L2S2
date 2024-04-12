@@ -10,7 +10,12 @@ test_graph.parse("/home/psevestre/YagotinyKB/yago-tiny50000.ttl", format="ttl")
 print('test_graph.parse OK')
 #test_graph.commit()
 #test_graph.close()
+print("g all nodes test :")
+nodes = list(test_graph.all_nodes())
+for node in nodes:
+    print(node)
 
+    
 def trouver_type_mot(mot):
     # Requête SPARQL pour trouver le type du mot donné
     query = f"""
