@@ -8,7 +8,7 @@ test_graph.open("ftest.db",create=True)
 print('accès à ftest.db OK')
 test_graph.parse("/home/psevestre/YagotinyKB/yago-tiny50000.ttl", format="ttl")
 print('test_graph.parse OK')
-test_graph.commit()
+#test_graph.commit()
 #test_graph.close()
 
 def trouver_type_mot(mot):
