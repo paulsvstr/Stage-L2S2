@@ -1,6 +1,6 @@
 from rdflib import Graph
 yago_graph = Graph(store="BerkeleyDB")
-yago_graph.open("ftest.db")
+yago_graph.open("yago.db")
 print("yago.db bien open")
 
 def trouver_type_mot(mot):
