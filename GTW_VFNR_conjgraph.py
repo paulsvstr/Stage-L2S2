@@ -12,9 +12,9 @@ def trouver_type_mot(mot):
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX yago: <http://yago-knowledge.org/resource/>
         
-        SELECT DISTINCT ?type
+        SELECT DISTINCT ?pre ?type
         WHERE {{
-            yago:{mot} rdf:type ?type.
+            yago:{mot} ?pre ?type.
         }}
     """
 
@@ -24,6 +24,7 @@ def trouver_type_mot(mot):
     print(results)
     # Récupérer et retourner le type du mot
     types = [row["type"] for row in results]
+    print(types)
     return types
 
 # Mot à rechercher
