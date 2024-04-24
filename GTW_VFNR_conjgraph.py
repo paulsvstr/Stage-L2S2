@@ -2,8 +2,8 @@ from rdflib import Graph,ConjunctiveGraph
 yago_graph = ConjunctiveGraph(store="BerkeleyDB")
 yago_graph.open("yago.db")
 print("yago.db bien open")
-print(yago_graph.all_nodes())
-'''
+#print(yago_graph.all_nodes())
+
 
 def trouver_type_mot(mot):
     # Requête SPARQL pour trouver le type du mot donné
@@ -36,4 +36,3 @@ if types:
     print(f"Le type de '{mot_a_rechercher}' est : {types}")
 else:
     print(f"Le type de '{mot_a_rechercher}' n'a pas été trouvé dans la base de données YAGO Tiny.")
-'''
